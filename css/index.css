@@ -1,0 +1,24 @@
+#calendar {
+    width: 50%;
+    background-color: darkred;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.doorItem {
+    width: 25%;
+    background-image: url("../img/christmastree.jpg");
+    background-size: 20px 40px;
+}
+
+.doorItem img {
+    width: 100%;
+}
+
+/* Centered text */
+.doorItem div {
+    color: white;
+    position: relative;
+    top: -55%;
+    left: 45%;
+}
