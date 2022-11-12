@@ -1,14 +1,21 @@
+:root {
+    --image-size: 200px
+}
+
 #calendar {
-    width: 50%;
     background-color: darkred;
     display: flex;
     flex-wrap: wrap;
+    width: calc(6 * var(--image-size));
 }
 
 .doorItem {
-    width: 25%;
-    background-image: url("../img/christmastree.jpg");
-    background-size: 20px 40px;
+    width: var(--image-size);
+    height: var(--image-size);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../img/christmastree.jpg) space;
 }
 
 .doorItem img {
@@ -16,9 +23,7 @@
 }
 
 /* Centered text */
-.doorItem div {
+.doorItem p {
     color: white;
     position: relative;
-    top: -55%;
-    left: 45%;
 }
