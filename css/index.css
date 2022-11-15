@@ -41,6 +41,27 @@ body {
     font-size: xx-large;
 }
 
-.doorItem p:hover {
+#backToCalendar {
+    color: white;
+    font-weight: bold;
+    font-size: larger;
+}
+
+#day section {
+    display: flex;
+    gap: 3em;
+}
+
+#dayText {
+    color: white;
+    font-size: larger;
+}
+
+
+.doorItem p:hover, #backToCalendar:hover {
     cursor: pointer;
+}
+
+.hidden, .hidden section {
+    display: none;
 }

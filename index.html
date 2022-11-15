@@ -13,10 +13,22 @@
     <article>
         <section>
             <h1>Willkommen beim Adventskalender 2022!</h1>
-            <p id="welcome">Im Dezember 2022 kannst du, wenn der entsprechende Tag gekommen ist, auf die Tür des Tages klicken und ein Bild und Text ansehen.</p>
+            <p id="welcome">Im Dezember 2022 kannst du, wenn der entsprechende Tag gekommen ist, auf die Tür des Tages
+                klicken und ein Bild und Text ansehen.</p>
         </section>
     </article>
     <article id="calendar">
+    </article>
+    <br><br>
+    <article id="testArticle" class="doorItem">
+        <p class="doorItem" onclick="loadDataForDay(0)">Test</p>
+    </article>
+    <article id="day" class="hidden">
+        <p id="backToCalendar" onclick="closeDay()">Zurück zum Kalendar</p>
+        <section>
+            <img id="dayImage" />
+            <p id="dayText"></p>
+        </section>
     </article>
 </body>
 
