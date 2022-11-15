@@ -23,11 +23,11 @@ function showContent(day) {
     // Note: getMonth starts at 0 so december is value 11
     if (today.getFullYear() === 2022 && today.getMonth() === 11) {
         if (today.getDate() >= day) {
-            alert('Not yet implemented')
+            alert('Noch nicht implementiert!')
         } else {
-            alert(`You cannot open the door ${day} for yet!`)
+            alert(`Du kannst die Tür für den Tag ${day} noch nicht öffnen!`)
         }
     } else {
-        alert('You can only open the advent calendar in the year 2022 and the month December')
+        alert('Du kannst Türen im Adeventskalendar nur im Dezember 2022 öffnen!')
     }
 }

@@ -2,6 +2,17 @@
     --image-size: 200px
 }
 
+body {
+    margin-left: 20%;
+    background-color: black;
+    color: white;
+}
+
+#welcome {
+    font-size: large;
+    font-weight: bold;
+}
+
 #calendar {
     background-color: darkred;
     display: flex;
