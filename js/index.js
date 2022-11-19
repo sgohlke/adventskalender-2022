@@ -22,7 +22,7 @@ if (calendar) {
 function showContent(day) {
     const today = new Date();
     // Note: getMonth starts at 0 so december is value 11
-    if (today.getFullYear() === 2022 && today.getMonth() === 11) {
+    if (today.getFullYear() === 2022 && today.getMonth() === 10) {
         if (today.getDate() >= day) {
             loadDataForDay(day)
         } else {
@@ -36,24 +36,18 @@ function showContent(day) {
 function loadDataForDay(day) {
     fetch(`data/${day}.json`)
         .then(response => {
-            console.log(`Hole Daten für Tag ${day}`, response)
+            // console.log(`Hole Daten für Tag ${day}`, response)
             return response.json()
         })
         .then(dayData => {
-            console.log(`Lese Daten für Tag ${day}`, dayData)
-            document.getElementById("day").classList.remove('hidden');
+            // console.log(`Lese Daten für Tag ${day}`, dayData)
+            document.getElementById("day").style.display = 'block';
             document.getElementById('dayImage').src = `data/${dayData.image}`
             document.getElementById('dayText').innerText = dayData.text
-            document.getElementById("calendar").classList.add('hidden')
-            // Only for testing purposes
-            document.getElementById("testArticle").classList.add('hidden')
         })
         .catch(error => alert(`Konnte Daten für Tag ${day} nicht laden. Fehler ist: ${error.message}`))
 }
 
 function closeDay() {
-    document.getElementById("day").classList.add('hidden');
-    document.getElementById("calendar").classList.remove('hidden');
-    // Only for testing purposes
-    document.getElementById("testArticle").classList.remove('hidden');
+    document.getElementById("day").style.display = 'none';
 }

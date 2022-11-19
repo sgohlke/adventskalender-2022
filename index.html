@@ -6,7 +6,6 @@
     <title>Adventskalender 2022</title>
     <link rel="stylesheet" href="css/index.css">
     <script defer src="js/index.js"></script>
-    <!-- <script type="module" src="js/basecontainer.js"></script> -->
 </head>
 
 <body>
@@ -23,13 +22,12 @@
     <article id="testArticle" class="doorItem">
         <p class="doorItem" onclick="loadDataForDay(0)">Test</p>
     </article>
-    <article id="day" class="hidden">
-        <p id="backToCalendar" onclick="closeDay()">Zurück zum Kalendar</p>
-        <section>
-            <img id="dayImage" />
-            <p id="dayText"></p>
-        </section>
-    </article>
+    <article id="day" class="modal">
+        <span class="close" onclick="closeDay()">&times;</span>
+        <img class="modal-content" id="dayImage">
+        <p id="dayText"></p>
+      </div>
+
 </body>
 
 </html>
