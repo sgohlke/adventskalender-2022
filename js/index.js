@@ -49,7 +49,7 @@ function loadDataForDay(day) {
             // console.log(`Lese Daten für Tag ${day}`, dayData)
             document.getElementById("day").style.display = 'block';
             document.getElementById('dayImage').src = `data/${dayData.image}`
-            document.getElementById('dayText').innerText = dayData.text
+            document.getElementById('dayText').innerHTML = `${dayData.text}<br><p id='copyright'> &#169; ${dayData.copyright} 2022</p>`
         })
         .catch(error => alert(`Konnte Daten für Tag ${day} nicht laden. Fehler ist: ${error.message}`))
 }

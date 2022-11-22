@@ -109,3 +109,7 @@ body {
     text-decoration: none;
     cursor: pointer;
   }
+
+  #copyright {
+    font-size: 14px;
+  }
