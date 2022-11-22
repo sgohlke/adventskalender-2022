@@ -19,10 +19,16 @@ if (calendar) {
     }
 }
 
+document.addEventListener('keydown', (event) => {
+    if (event.key && event.key.includes('Esc')) {
+        closeDay();
+    }
+}, false);
+
 function showContent(day) {
     const today = new Date();
     // Note: getMonth starts at 0 so december is value 11
-    if (today.getFullYear() === 2022 && today.getMonth() === 10) {
+    if (today.getFullYear() === 2022 && today.getMonth() === 11) {
         if (today.getDate() >= day) {
             loadDataForDay(day)
         } else {

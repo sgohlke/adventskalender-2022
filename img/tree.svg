@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" height="200" width="200">
+  <!-- Define star -->
+  <polygon points="100,0 105,15 95,5 105,5 95,15" stroke="transparent" fill="#FFCC00" />
+  
+  <!-- Define tree -->
+  <polygon points="5,160 195,160 130,110 180,110 120,60 140,60 100,10 60,60 80,60 20,110 70,110" fill="#006600" />
+
+  <!-- Define stump -->
+  <rect x="90" y="160" width="20" height="35 " fill="#663300" />
+    Sorry, your browser does not support inline SVG.
+</svg>

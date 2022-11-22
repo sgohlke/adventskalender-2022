@@ -14,7 +14,7 @@ body {
 }
 
 #calendar {
-    background-color: darkred;
+    background-color: #000033;
     display: flex;
     flex-wrap: wrap;
     width: calc(6 * var(--image-size));
@@ -26,7 +26,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url(../img/christmastree.jpg) space;
+    background: url(../img/tree.svg) space;
 }
 
 .doorItem img {
